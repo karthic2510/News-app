@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@vercel/node": "^2.10.0",
+    "@vercel/python": "^3.1.55"
+  }
+}

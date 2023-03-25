@@ -1,0 +1,8 @@
+{
+    "functions": {
+      "pages/api/summarize.py": {
+        "runtime": "@vercel/python@1.3.0"
+      }
+    }
+  }
+  
