@@ -12,10 +12,7 @@ from datetime import timedelta
 from newsapi import NewsApiClient
 
 GNEWS_API_BASE_URL = 'https://gnews.io/api/v4/search'
-GNEWS_API_KEY = 'your_gnews_api_key'
-NEWS_API_KEY = 'your_news_api_key'
-MS_API_KEY = 'your_mediastack_api_key'
-openai.api_key = os.getenv("your_openai_api_key")
+openai.api_key = os.getenv(OPEN_API_KEY)
 
 class handler(BaseHTTPRequestHandler):
     def do_POST(self):
