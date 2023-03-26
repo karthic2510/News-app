@@ -85,7 +85,7 @@ def fetch_headlines(topic):
         print(f"Error fetching top headlines for {topic}")
     
     #fetching 15 from mediastack
-    ms_url = f"http://api.mediastack.com/v1/news?access_key={MS_API_KEY}&keywords={topic}&limit=15"
+    ms_url = f"http://api.mediastack.com/v1/news?access_key={MEDIASTACK_API_KEY}&keywords={topic}&limit=15"
     ms_response = requests.get(ms_url)
     
     if response.status_code == 200:
