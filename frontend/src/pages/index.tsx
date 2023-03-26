@@ -10,7 +10,7 @@ export default function Home() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await axios.post('api/app', { topic });
+      const response = await axios.post('pages/api/app', { topic });
       setHeader(response.data.header);
       setSummary(response.data.summary);
     } catch (error) {
